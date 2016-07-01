@@ -13,6 +13,7 @@
 		571E34661D26332B002C4EF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571E34641D26332B002C4EF7 /* LaunchScreen.storyboard */; };
 		571E346E1D263377002C4EF7 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E346D1D263377002C4EF7 /* ItemsViewController.swift */; };
 		571E34701D263470002C4EF7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E346F1D263470002C4EF7 /* Item.swift */; };
+		575CD4711D263ABD0064182F /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575CD4701D263ABD0064182F /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		571E34671D26332B002C4EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		571E346D1D263377002C4EF7 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		571E346F1D263470002C4EF7 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		575CD4701D263ABD0064182F /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				571E345B1D26332B002C4EF7 /* AppDelegate.swift */,
 				571E346F1D263470002C4EF7 /* Item.swift */,
+				575CD4701D263ABD0064182F /* ItemStore.swift */,
 				571E346D1D263377002C4EF7 /* ItemsViewController.swift */,
 				571E345F1D26332B002C4EF7 /* Main.storyboard */,
 				571E34621D26332B002C4EF7 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			files = (
 				571E346E1D263377002C4EF7 /* ItemsViewController.swift in Sources */,
 				571E34701D263470002C4EF7 /* Item.swift in Sources */,
+				575CD4711D263ABD0064182F /* ItemStore.swift in Sources */,
 				571E345C1D26332B002C4EF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
