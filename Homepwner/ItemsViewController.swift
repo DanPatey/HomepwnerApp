@@ -17,8 +17,8 @@ class ItemsViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        // Create an instance of UITableViewCell, with default appearance
-        let cell = UITableViewCell(style: .Value1, reuseIdentifier: "UITableViewCell")
+        // Get a new recycled cell
+        let cell = tableView.dequeueReusableCellWithIdentifier("UITableViewCell", forIndexPath: indexPath)
         let item = itemStore.allItems[indexPath.row]
         
         cell.textLabel?.text = item.name
