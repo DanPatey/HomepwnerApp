@@ -31,6 +31,18 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         presentViewController(imagePicker, animated: true, completion: nil)
     }
     
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        // Get picked image from info dictionary
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        // Put that image on the screen in the image view
+        imageView.image = image
+        
+        // Take image picker off the screen -
+        // you must call this dismiss method
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     @IBAction func backgroundTapped(sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
