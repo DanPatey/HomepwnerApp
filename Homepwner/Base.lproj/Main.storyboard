@@ -131,6 +131,9 @@
                                                 <rect key="frame" x="53" y="0.0" width="547" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="cGs-cz-tAp" id="IDc-Wq-UfR"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -147,6 +150,9 @@
                                                 <rect key="frame" x="51" y="0.0" width="549" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="cGs-cz-tAp" id="igx-w8-yc3"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -163,6 +169,9 @@
                                                 <rect key="frame" x="50" y="0.0" width="550" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="cGs-cz-tAp" id="bwT-xT-Eo8"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -180,6 +189,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="lhN-fh-LrA" firstAttribute="top" secondItem="miQ-Q8-4vw" secondAttribute="bottom" constant="8" id="H28-nV-zWv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="miQ-Q8-4vw" secondAttribute="trailing" id="HsS-zX-kHP"/>
@@ -198,6 +208,9 @@
                                 <exclude reference="ZRH-h4-kZi"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4B1-NJ-nzI" appends="YES" id="8C4-Qe-do0"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="GDW-ck-3oL" id="ZPW-Ul-2T1"/>
@@ -207,6 +220,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgD-L2-q6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4B1-NJ-nzI">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="cGs-cz-tAp" id="5fo-9V-dbt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1970" y="406"/>
         </scene>
