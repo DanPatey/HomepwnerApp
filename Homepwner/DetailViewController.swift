@@ -35,6 +35,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         // Get picked image from info dictionary
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         
+        // Store the image from info dictionary
+        imageStore.setImage(image, forKey: item.itemKey)
+        
         // Put that image on the screen in the image view
         imageView.image = image
         
@@ -52,6 +55,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
             navigationItem.title = item.name
         }
     }
+    var imageStore: ImageStore!
     
     let numberFormatter: NSNumberFormatter = {
         let formatter = NSNumberFormatter()
